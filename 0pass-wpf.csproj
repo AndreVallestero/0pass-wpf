@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_0pass_wpf</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="assets\**" />
+    <EmbeddedResource Remove="assets\**" />
+    <None Remove="assets\**" />
+    <Page Remove="assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="res\images\key-32x32.png" />
+    <None Remove="res\images\plus-32x32.png" />
+    <None Remove="res\images\reload-32x32.png" />
+    <None Remove="res\images\trash-32x32.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\images\key-32x32.png" />
+    <Resource Include="res\images\plus-32x32.png" />
+    <Resource Include="res\images\reload-32x32.png" />
+    <Resource Include="res\images\trash-32x32.png" />
+  </ItemGroup>
+
+</Project>

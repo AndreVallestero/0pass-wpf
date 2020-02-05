@@ -1,0 +1,44 @@
+﻿<Window x:Class="_0pass_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0pass_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="480" Background="#FF394658">
+    
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFEDEDED"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <!--<Setter Property="HorizontalContentAlignment" Value="Center"/>-->
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*" />
+            <RowDefinition MinHeight="36" MaxHeight="48"/>
+        </Grid.RowDefinitions>
+
+        <ListView Grid.ColumnSpan="4" Background="{x:Null}" BorderThickness="0"/>
+        <Button Grid.Row="1">
+            <Image Source="/res/images/plus-32x32.png" Stretch="None"/>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1">
+            <Image Source="/res/images/reload-32x32.png" Stretch="None"/>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="2">
+            <Image Source="/res/images/key-32x32.png" Stretch="None"/>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="3">
+            <Image Source="/res/images/trash-32x32.png" Stretch="None"/>
+        </Button>
+    </Grid>
+</Window>
