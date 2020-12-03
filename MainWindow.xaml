@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_0pass_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="480" Background="#FF394658">
+        Title="0pass-wpf" Height="720" Width="480" Background="#FF394658">
     
     <Window.Resources>
         <Style TargetType="Button">

@@ -1,0 +1,4 @@
+ask for password when needed. Cache password.
+use dialog to request for password
+
+auto referesh list whenever passbook is changed. Add a refersh button
